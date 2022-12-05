@@ -56,6 +56,10 @@ a:visited{
 	color: #8d8fa8;
 }
 
+a:link{
+    color: #8d8fa8;
+}
+
 #quote{
     font-size: medium;
     font-style: italic;
