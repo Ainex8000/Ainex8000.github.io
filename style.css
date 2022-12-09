@@ -13,6 +13,32 @@ html, body{
     height: 100%;
 }
 
+th, td {
+    padding: 15px;
+    color: white;
+    text-align: center;
+    
+}
+
+img {
+    border-radius: 50%;
+}
+
+form{
+    margin-left: 550px;
+}
+
+label{
+    color: white;
+}
+
+input[type=text] {
+    width: 25%;
+    padding: 5px 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+  }
+
 #indexTitle{
     color: #efefef;
 }
@@ -28,7 +54,7 @@ html, body{
     color: white;
 }
 
-h3
+h2, h3
 {
     color: white;
 }
@@ -52,12 +78,22 @@ h3
     margin-right: 45px;
 }
 
+.sectionThree{
+    color: white;
+    background-color: #605677;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-right: 250px;
+    margin-left: 250px;
+}
+
 a:visited{
-	color: #8d8fa8;
+	color: #c6c8e0;
 }
 
 a:link{
-    color: #8d8fa8;
+    color: #c6c8e0;
 }
 
 #quote{
