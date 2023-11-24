@@ -1,0 +1,237 @@
+/* Style Sheet, Xenia DeNoyer*/
+body {
+    background-color: #134074;
+    line-height: 1;
+    margin-top: 0!important;
+    position: relative;
+    margin: 0px;
+    z-index: 99;
+    width: 1000px;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+th, td {
+    padding: 15px;
+    color: white;
+    text-align: center;
+    
+}
+
+img {
+    border-radius: 50%;
+}
+
+.imgheader {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+form{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+label{
+    color: white;
+}
+
+input[type=text] {
+    width: 25%;
+    padding: 5px 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3
+{
+    color: white;
+    text-align: center;
+}
+
+li {
+    color: white;
+    font-size: 20px;
+}
+
+/* Section CSS */
+.section{
+    color: white;
+    background-color: #0B2545;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-right: 350px;
+    margin-left: 350px;
+    text-align: center;
+}
+
+.sectionTwo{
+    color: white;
+    background-color: #0B2545;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-right: 45px;
+}
+
+.sectionThree{
+    color: white;
+    background-color: #0B2545;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-right: 450px;
+    margin-left: 450px;
+    text-align: center;
+}
+
+.sectionheader {
+    color: white;
+    background-color: #0B2545;
+    background-image: linear-gradient(to bottom right, #0B2545 , #134074);
+    padding: 10px;
+}
+
+.sectionfooter {
+    color: white;
+    background-color: #0B2545;
+    padding: 10px;
+}
+
+.sectionTable{
+    color: white;
+    background-color: #0B2545;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-right: 350px;
+    margin-left: 350px;
+    text-align: center;
+    font-size: 23px;
+}
+
+a:visited{
+	color: #c6c8e0;
+}
+
+a:link{
+    color: #c6c8e0;
+}
+
+/* Solid border */
+hr.solid {
+    border-top: 3px solid #EEF4ED;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+/* Add a background color to the top navigation */
+.topnav {
+    background-color: #0B2545;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition-duration: 1s;
+  }
+  
+  /* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #EEF4ED;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #8DA9C4;
+    color: white;
+  }
+
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.backwrap {
+    background-size:100% 100%;
+    width:100%;
+    height:100%;
+    position:relative;
+    left:0;
+    top:0;
+}
+
+/* Language Icons */
+.language {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.language__img {
+    width: 100%;
+    height: 150px;
+    max-width: 150px;
+    transition: all 300ms ease;
+}
+
+.language:hover .language__img {
+    filter: brightness(80%);
+    opacity: 0.86;
+    transform: scale(0.9);
+}
+
+.language__img--wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 16px;
+}
+
+.language__list {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.language__name {
+    position: absolute;
+    bottom: 0;
+    transform: scale(0);
+    transition: all 300ms;
+    font-size: 20px;
+    opacity: 0;
+    color: white;
+}
+
+.language:hover .language__name {
+    transform: scale(1);
+    opacity: 1;
+}

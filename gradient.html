@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- CSC256 Final - Xenia DeNoyer, Spring 2023 -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="./css/main.css" rel="stylesheet" type="text/css">
+
+    <title>
+        Surprise Gradient
+    </title>
+</head>
+
+<body>
+    <!-- Header -->
+    <section class="sectionheader">
+        <img src="./img/codelogonobg.png" class="imgheader">
+    </section>
+
+    <!-- Navigation Bar -->
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Boards</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About Me</a>
+        <a href="sip.html">Home Brew</a>
+        <a class="active" href="gradient.html">Fun Surprise</a>
+    </div>
+
+    <!-- JS file needs to be loaded after the body is initialized -->
+    <script src="./js/gradient.js"></script>
+    <section class="section">
+        <div>
+            <h1 id="gradient"></h1>
+            <h2>Here is a little project I worked on in a previous semester that I really enjoyed making.</h2>
+            <h3>Press 'C' or the Spacebar. Scroll up or down. Click the button.</h3>
+            <button id="changeGradientBtn">Change Gradient</button>
+            <!-- Displays what colors are currently displayed in the gradients-->
+            <p>Color 1: <span id="color1"></span></p>
+            <p>Color 2: <span id="color2"></span></p>
+        </div>
+    </section>
+</body>
+
+</html>
