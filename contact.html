@@ -1,64 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- CSC256 Final - Xenia DeNoyer, Spring 2023 -->
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="Contact Xenia DeNoyer">
+    
     <link href="./css/main.css" rel="stylesheet" type="text/css">
-    <script src="/js/contact.js"></script>
-
-    <title>Contact Page</title>
+    <script src="./js/contact.js" defer></script>
+    
+    <title>Contact - Xenia DeNoyer</title>
 </head>
 
 <body>
-    <!-- Header -->
-    <section class="sectionheader">
-        <img src="./img/codelogonobg.png" class="imgheader">
-    </section>
 
     <!-- Navigation Bar -->
-    <div class="topnav">
-        <a href="index.html">Home</a>
-        <a href="portfolio.html">Boards</a>
-        <a class="active" href="contact.html">Contact</a>
-        <a href="about.html">About Me</a>
-        <a href="sip.html">Home Brew</a>
-        <a href="gradient.html">Fun Surprise</a>
-    </div>
-
-    <section class="section">
-        <h1 id="contact"></h1>
-        <div>
-            <h3>LinkedIn: <a href="https://www.linkedin.com/in/xenia-denoyer-58a806225/">xenia-denoyer</a>
-            </h3>
-            <h3>GitHub: <a href="https://github.com/Ainex8000">Ainex8000</a></h3>
-            <h3>Email: <a href="mailto:xendenoy@uat.edu">xendenoy@uat.edu</a></h3>
+    <nav class="nav">
+        <div class="nav-container">
+            <img src="./img/codelogonobg.png" alt="Xenia DeNoyer Logo" style="width: 30%;">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link active" href="contact.html">Contact</a>
+            <a class="nav-link" href="about.html">About Me</a>
+            <a class="nav-link" href="sip.html">Home Brew</a>
+            <a class="nav-link" href="gradient.html">Fun Surprise</a>
         </div>
-        <h3>Want me to contact you? No problem.</h2>
+    </nav>
 
-            <form>
-                <label for="name">Your Name</label><br>
-                <input type="text" id="name" name="name"><br>
-                <label for="email">Email Address</label><br>
-                <input type="text" id="email" email="email"><br>
-                <br>
-                <input type="submit" value="Submit">
-            </form>
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1 id="contact"></h1>
+        </div>
     </section>
-    <br>
+
+    <!-- Contact Content -->
+    <section class="contact-content section">
+        <div class="container">
+            <div class="contact-form-container sip-glass-container">
+                <div class="contact-link-item">
+                    <h3>LinkedIn:</h3>
+                    <a href="https://www.linkedin.com/in/xenia-denoyer-58a806225/" target="_blank" rel="noopener noreferrer">xenia-denoyer</a>
+                </div>
+                <div class="contact-link-item">
+                    <h3>GitHub:</h3>
+                    <a href="https://github.com/Ainex8000" target="_blank" rel="noopener noreferrer">Ainex8000</a>
+                </div>
+                <div class="contact-link-item">
+                    <h3>Email:</h3>
+                    <a href="mailto:xeniadenoyer@gmail.com">xeniadenoyer@gmail.com</a>
+                </div>
+                <div class="contact-link-item" style="flex-direction: column; align-items: flex-start; gap: 1rem;">
+                    <h3>Download My Resume</h3>
+                    <a href="./resume/XDeNoyer_Resume.pdf" download class="form-submit" style="display: inline-block; text-decoration: none; margin: 0; color: #ffffff;">
+                        Download Resume (PDF)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <!--<section class="section" style="padding: 0;">
+        <div class="container">
+            <div class="contact-form-container sip-glass-container">
+                <iframe
+                     src="resume/XDeNoyer_Resume.pdf"
+                    width="100%"
+                    height="100%"
+                    style="border: none;"></iframe>
+                
+            </div>
+        </div>
+    </section> -->
 
     <!-- Footer -->
-    <footer>
-        <section class="sectionfooter">
-            <p style="color:white">Xenia DeNoyer's Portfolio Site</p>
-            <p style="color:white">Updated 4/16/2023</p>
-            <p style="color:white">See a bug? Lemme know: xendenoy@uat.edu</p>
-        </section>
+    <footer class="footer">
+        <div class="container">
+            <p>Xenia DeNoyer's Portfolio Site</p>
+            <p>Updated 1/7/2026</p>
+            <p>See a bug? Lemme know: <a href="mailto:xeniadenoyer@gmail.com">xeniadenoyer@gmail.com</a></p>
+        </div>
     </footer>
 </body>
-
 </html>

@@ -1,128 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- CSC256 Final - Xenia DeNoyer, Spring 2023 -->
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="Xenia DeNoyer's Portfolio - Computer Science Student and Developer">
+    
     <link href="./css/main.css" rel="stylesheet" type="text/css">
-    <script src="./js/code.js"></script>
-    <title>
-        Xenia DeNoyer's Portfolio
-    </title>
+    <script src="./js/code.js" defer></script>
+    
+    <title>Xenia DeNoyer's Portfolio</title>
 </head>
 
 <body>
-    <!-- Header -->
-    <section class="sectionheader">
-        <img src="./img/codelogonobg.png" class="imgheader">
-    </section>
 
     <!-- Navigation Bar -->
-    <div class="topnav">
-        <a class="active" href="index.html">Home</a>
-        <a href="portfolio.html">Boards</a>
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About Me</a>
-        <a href="sip.html">Home Brew</a>
-        <a href="gradient.html">Fun Surprise</a>
-    </div>
-
-    <!-- Content -->
-    <center>
-        <h1>Xenia DeNoyer's Portfolio Site</h1>
-        <div>
-            <h3 id="demo"></h3>
+    <nav class="nav">
+        <div class="nav-container">
+            <img src="./img/codelogonobg.png" alt="Xenia DeNoyer Logo" style="width: 30%;">
+            <a class="nav-link active" href="index.html">Home</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="about.html">About Me</a>
+            <a class="nav-link" href="sip.html">Home Brew</a>
+            <a class="nav-link" href="gradient.html">Fun Surprise</a>
         </div>
+    </nav>
 
-        <br>
-        <table>
-            <tr>
-                <td><img src="./img/codec.png" width="150" height="150"></td>
-                <td><img src="./img/xeniaimg3.jpg" width="150" height="150"></td>
-                <td><img src="./img/oliver.png" width="150" height="150"></td>
-            </tr>
-        </table>
-    </center>
-
-    <!--This section is for the programming languages that I know and will be updated as I learn more-->
-    <section id="languages">
+    <!-- Hero Section -->
+    <section class="hero">
         <div class="container">
-            <div class="row">
-                <h1>These are the programming languages I know</h1>
-                <div class="language__list">
-                    <div class="language">
-                        <figure class="language__img--wrapper">
-                            <img src="https://cdn.iconscout.com/icon/free/png-64/c-4-226082.png" alt=""
-                                class="language__img">
-                            <span class="language__name">C++</span>
-                        </figure>
-                    </div>
-                    <div class="language">
-                        <figure class="language__img--wrapper">
-                            <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt=""
-                                class="language__img">
-
-                            <span class="language__name">JavaScript</span>
-                        </figure>
-                    </div>
-                    <div class="language">
-                        <figure class="language__img--wrapper">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
-                                alt="" class="language__img">
-
-                            <span class="language__name">HTML</span>
-                        </figure>
-                    </div>
-                    <div class="language">
-                        <figure class="language__img--wrapper">
-                            <img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt=""
-                                class="language__img">
-
-                            <span class="language__name">CSS</span>
-                        </figure>
-                    </div>
-                    <div class="language">
-                        <figure class="language__img--wrapper">
-                            <img src="https://cdn.iconscout.com/icon/free/png-512/c-2336965-1982846.png?f=avif&w=256"
-                                alt="" class="language__img">
-
-                            <span class="language__name">C#</span>
-                        </figure>
-                    </div>
-                    <div class="language">
-                        <figure class="language__img--wrapper">
-                            <img src="https://cdn.iconscout.com/icon/free/png-64/react-3-1175109.png" alt=""
-                                class="language__img">
-
-                            <span class="language__name">React Native</span>
-                        </figure>
-                    </div>
+            <div class="hero-content">
+                <h1>Xenia DeNoyer's Portfolio Site</h1>
+                <p class="hero-subtitle" id="demo"></p>
+                
+                <div class="hero-images">
+                    <img src="./img/flowersone.jpg" alt="Flower">
+                    <img src="./img/hiking.jpg" alt="Xenia">
+                    <img src="./img/oliver.png" alt="Oliver">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="sectionThree">
-        <h1>Skills</h1>
-        <h3>Web design, UI/UX design, leadership, and management skills.</h3>
-        <h3>Programming in multiple languages: HTML, CSS, JavaScript, C++, C#, and React Native.</h3>
-        <h3>I have experience with game engines such as Unreal Engine 4, Unity, and Construct.</h3>
-
+    <!-- Programming Languages Section -->
+    <section class="languages-section section">
+        <div class="container">
+            <h2 class="section-title">Programming Languages</h2>
+            <div class="languages-grid">
+                <div class="language-card">
+                    <div class="language-img-wrapper">
+                        <img src="https://cdn.iconscout.com/icon/free/png-64/c-4-226082.png" alt="C++" class="language-img">
+                    </div>
+                    <div class="language-name">C++</div>
+                </div>
+                <div class="language-card">
+                    <div class="language-img-wrapper">
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="JavaScript" class="language-img">
+                    </div>
+                    <div class="language-name">JavaScript</div>
+                </div>
+                <div class="language-card">
+                    <div class="language-img-wrapper">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="HTML" class="language-img">
+                    </div>
+                    <div class="language-name">HTML</div>
+                </div>
+                <div class="language-card">
+                    <div class="language-img-wrapper">
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="CSS" class="language-img">
+                    </div>
+                    <div class="language-name">CSS</div>
+                </div>
+                <div class="language-card">
+                    <div class="language-img-wrapper">
+                        <img src="https://cdn.iconscout.com/icon/free/png-512/c-2336965-1982846.png?f=avif&w=256" alt="C#" class="language-img">
+                    </div>
+                    <div class="language-name">C#</div>
+                </div>
+                <div class="language-card">
+                    <div class="language-img-wrapper">
+                        <img src="https://cdn.iconscout.com/icon/free/png-64/react-3-1175109.png" alt="React Native" class="language-img">
+                    </div>
+                    <div class="language-name">React Native</div>
+                </div>
+                <div class="language-card">
+                    <div class="language-img-wrapper">
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/python-5-226051.png" alt="Python" class="language-img">
+                    </div>
+                    <div class="language-name">Python</div>
+                </div>
+                <div class="language-card">
+                    <div class="language-img-wrapper">
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/php-27-226042.png" alt="PHP" class="language-img">
+                    </div>
+                    <div class="language-name">PHP</div>
+                </div>
+            </div>
+        </div>
     </section>
-    <br>
+
+    <!-- Skills Section -->
+    <section class="skills-section section">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-content">
+                <h3>My skills are focused in on web development with a focus on front-end programming with HTML, CSS, and JavaScript, with experience in UI/UX design and back-end 
+                    programming. While in college I learned other programming languages including Python, C++, C#, React Native, and a few instances of PHP. 
+                    <br><br> I also have some experience as a technical support specialist, focusing on troubleshooting and resolving software issues. 
+                    Some of my other experiences include game engines such as Unreal Engine 4, Unity, and Construct, part of classes I initially took for my degree.
+                </h3>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer>
-        <section class="sectionfooter">
-            <p style="color:white">Xenia DeNoyer's Portfolio Site</p>
-            <p style="color:white">Updated 4/16/2023</p>
-            <p style="color:white">See a bug? Lemme know: xendenoy@uat.edu</p>
-        </section>
+    <footer class="footer">
+        <div class="container">
+            <p>Xenia DeNoyer's Portfolio Site</p>
+            <p>Updated 1/7/2026</p>
+            <p>See a bug? Lemme know: <a href="mailto:xeniadenoyer@gmail.com">xeniadenoyer@gmail.com</a></p>
+        </div>
     </footer>
 </body>
-
 </html>

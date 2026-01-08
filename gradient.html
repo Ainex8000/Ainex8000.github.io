@@ -1,49 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- CSC256 Final - Xenia DeNoyer, Spring 2023 -->
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="Gradient Background Changer - Fun Surprise">
+    
     <link href="./css/main.css" rel="stylesheet" type="text/css">
-
-    <title>
-        Surprise Gradient
-    </title>
+    <script src="./js/gradient.js" defer></script>
+    
+    <title>Surprise Gradient - Xenia DeNoyer</title>
 </head>
 
 <body>
-    <!-- Header -->
-    <section class="sectionheader">
-        <img src="./img/codelogonobg.png" class="imgheader">
-    </section>
 
     <!-- Navigation Bar -->
-    <div class="topnav">
-        <a href="index.html">Home</a>
-        <a href="portfolio.html">Boards</a>
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About Me</a>
-        <a href="sip.html">Home Brew</a>
-        <a class="active" href="gradient.html">Fun Surprise</a>
-    </div>
+    <nav class="nav">
+        <div class="nav-container">
+            <img src="./img/codelogonobg.png" alt="Xenia DeNoyer Logo" style="width: 30%;">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="about.html">About Me</a>
+            <a class="nav-link" href="sip.html">Home Brew</a>
+            <a class="nav-link active" href="gradient.html">Fun Surprise</a>
+        </div>
+    </nav>
 
-    <!-- JS file needs to be loaded after the body is initialized -->
-    <script src="./js/gradient.js"></script>
-    <section class="section">
-        <div>
-            <h1 id="gradient"></h1>
-            <h2>Here is a little project I worked on in a previous semester that I really enjoyed making.</h2>
-            <h3>Press 'C' or the Spacebar. Scroll up or down. Click the button.</h3>
-            <button id="changeGradientBtn">Change Gradient</button>
-            <!-- Displays what colors are currently displayed in the gradients-->
-            <p>Color 1: <span id="color1"></span></p>
-            <p>Color 2: <span id="color2"></span></p>
+    <!-- Gradient Section -->
+    <section class="section" style="background: transparent; min-height: 60vh; display: flex; align-items: center; justify-content: center;">
+        <div class="container">
+            <div class="gradient-glass-container">
+                <h1 id="gradient" style="text-align: center; margin-bottom: 2rem;"></h1>
+                <h2 style="text-align: center; margin-bottom: 2rem; font-weight: 400;">
+                    Here is a function I created a while ago that I really enjoyed making.
+                </h2>
+                <h3 style="text-align: center; margin-bottom: 2rem; font-weight: 400;">
+                     To randomize the gradient, press 'C' or the Spacebar. Click the button.
+                </h3>
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <button id="changeGradientBtn" class="form-submit" style="align-self: center; margin: 0 auto;">
+                        Change Gradient
+                    </button>
+                </div>
+                <div style="text-align: center; padding: 1rem;">
+                    <p style="margin-bottom: 0.5rem;"><strong>Color 1:</strong> <span id="color1"></span></p>
+                    <p style="margin-bottom: 0;"><strong>Color 2:</strong> <span id="color2"></span></p>
+                </div>
+            </div>
         </div>
     </section>
-</body>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Xenia DeNoyer's Portfolio Site</p>
+            <p>Updated 1/7/2026</p>
+            <p>See a bug? Lemme know: <a href="mailto:xeniadenoyer@gmail.com">xeniadenoyer@gmail.com</a></p>
+        </div>
+    </footer>
+</body>
 </html>

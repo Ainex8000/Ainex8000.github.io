@@ -1,3 +1,6 @@
+// Gradient Background Changer - Xenia DeNoyer
+// Modern Portfolio Version - Preserved Functionality
+
 // These are the possible colors
 const colors = [
     '#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6', '#E6B333', '#3366E6', '#999966', '#99FF99', '#B34D4D',
@@ -19,29 +22,25 @@ function generateRandomGradient() {
     const angle = Math.floor(Math.random() * 361);
 
     // Displaying the current colors to the user
-    document.getElementById("color1").innerHTML = color1;
-    document.getElementById("color1").style.color = color1;
-    document.getElementById("color2").innerHTML = color2;
-    document.getElementById("color2").style.color = color2;
+    const color1El = document.getElementById("color1");
+    const color2El = document.getElementById("color2");
+    if (color1El) {
+        color1El.innerHTML = color1;
+        color1El.style.color = color1;
+    }
+    if (color2El) {
+        color2El.innerHTML = color2;
+        color2El.style.color = color2;
+    }
 
     // Returns values
     return `linear-gradient(${angle}deg, ${color1}, ${color2})`;
 }
 
-// Function to handle scroll wheel event
-function handleScrollWheel(event) {
-    //event.preventDefault();
-    const delta = Math.sign(event.deltaY); // Get scroll direction (1 for up, -1 for down)
-    let opacity = parseFloat(currentGradient.slice(-4)); // Get current opacity value
-    opacity += delta * 0.1; // Update opacity based on scroll direction
-    opacity = Math.max(0, Math.min(1, opacity)); // Limit opacity between 0 and 1
-    currentGradient = currentGradient.slice(0, -4) + opacity + ')'; // Update opacity in gradient value
-    document.body.style.backgroundImage = currentGradient; // Apply updated gradient to background
-}
-
 // Function to handle spacebar key press event
 function handleSpacebarPress(event) {
     if (event.code === 'Space') {
+        event.preventDefault();
         currentGradient = generateRandomGradient();
         document.body.style.backgroundImage = currentGradient;
     }
@@ -49,7 +48,7 @@ function handleSpacebarPress(event) {
 
 // Function to handle 'c' key press event
 function handleKeyPress(event) {
-    if (event.key === 'c') {
+    if (event.key === 'c' || event.key === 'C') {
         currentGradient = generateRandomGradient();
         document.body.style.backgroundImage = currentGradient;
     }
@@ -57,14 +56,15 @@ function handleKeyPress(event) {
 
 // Add event listeners
 document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('changeGradientBtn').addEventListener('click', function () {
-        currentGradient = generateRandomGradient();
-        document.body.style.backgroundImage = currentGradient;
-    });
+    const changeBtn = document.getElementById('changeGradientBtn');
+    if (changeBtn) {
+        changeBtn.addEventListener('click', function () {
+            currentGradient = generateRandomGradient();
+            document.body.style.backgroundImage = currentGradient;
+        });
+    }
 });
 
-// Add scroll wheel event listener
-window.addEventListener('wheel', handleScrollWheel);
 // Add key press listener for c
 window.addEventListener('keydown', handleKeyPress);
 // Add key press listener for spacebar
@@ -83,9 +83,12 @@ var speed = 50; /* The speed/duration of the effect in milliseconds */
 
 function typeWriter() {
   if (i < txt.length) {
-    document.getElementById("gradient").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
+    const gradientEl = document.getElementById("gradient");
+    if (gradientEl) {
+      gradientEl.innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
   }
 }
 

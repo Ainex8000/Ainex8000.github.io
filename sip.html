@@ -1,48 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- CSC256 Final - Xenia DeNoyer, Spring 2023 -->
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="Home Brew - Xenia DeNoyer's Student Innovation Project">
+    
     <link href="./css/main.css" rel="stylesheet" type="text/css">
-
-    <title>Home Brew</title>
+    
+    <title>Home Brew - Xenia DeNoyer</title>
 </head>
 
 <body>
-    <!-- Header -->
-    <section class="sectionheader">
-        <img src="./img/codelogonobg.png" class="imgheader">
-    </section>
 
     <!-- Navigation Bar -->
-    <div class="topnav">
-        <a href="index.html">Home</a>
-        <a href="portfolio.html">Boards</a>
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About Me</a>
-        <a class="active" href="sip.html">Home Brew</a>
-        <a href="gradient.html">Fun Surprise</a>
-    </div>
+    <nav class="nav">
+        <div class="nav-container">
+            <img src="./img/codelogonobg.png" alt="Xenia DeNoyer Logo" style="width: 30%;">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="about.html">About Me</a>
+            <a class="nav-link active" href="sip.html">Home Brew</a>
+            <a class="nav-link" href="gradient.html">Fun Surprise</a>
+        </div>
+    </nav>
 
-    <section class="section">
-        <h1>This is Home Brew</h1>
-        <p>Home Brew was created in my senior year of college as my Student Innovation Project, or SIP for short.</p>
+    <!-- SIP Hero -->
+    <section class="about-hero">
+        <div class="container">
+            <h1>This is Home Brew</h1>
+        </div>
     </section>
-    <br>
+
+    <!-- SIP Content -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-form-container sip-glass-container" style="max-width: 800px; margin: 0 auto;">
+                <p style="font-size: 1.2rem; line-height: 1.8;">
+                    Home Brew was created in my senior year of college as my Student Innovation Project, or SIP for short. It is a mobile 
+                    application that would help users find coffee and tea recipes that would best suit them based on their preferences.
+                    <br><br>
+                    The application was created using React Native on Snack Expo. The application was tested on both Android and iOS devices, 
+                    and the code was uploaded to GitHub for easy access.
+                    <br><br> I presented Home Brew at the Fall 2023 SIP Showcase, where it received the award for Most Market Viable.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="section" style="padding: 0;">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="contact-form-container sip-glass-container">
+                    <h2 style="text-align: center; margin-bottom: 2rem;">Presentation Video</h2>
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/zaHTum2_bNA?si=si0znagDXrnBYPrY"
+                            title="Home Brew Presentation Video"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer>
-        <section class="sectionfooter">
-            <p style="color:white">Xenia DeNoyer's Portfolio Site</p>
-            <p style="color:white">Updated 4/16/2023</p>
-            <p style="color:white">See a bug? Lemme know: xendenoy@uat.edu</p>
-        </section>
+    <footer class="footer">
+        <div class="container">
+            <p>Xenia DeNoyer's Portfolio Site</p>
+            <p>Updated 1/7/2026</p>
+            <p>See a bug? Lemme know: <a href="mailto:xeniadenoyer@gmail.com">xeniadenoyer@gmail.com</a></p>
+        </div>
     </footer>
 </body>
-
 </html>

@@ -1,72 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- CSC256 Final - Xenia DeNoyer, Spring 2023 -->
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="About Xenia DeNoyer - Computer Science Student">
+    
     <link href="./css/main.css" rel="stylesheet" type="text/css">
-    <script src="./js/code.js"></script>
-
-    <title>About Me</title>
+    <script src="./js/code.js" defer></script>
+    
+    <title>About Me - Xenia DeNoyer</title>
 </head>
 
 <body>
-    <!-- Header -->
-    <section class="sectionheader">
-        <img src="./img/codelogonobg.png" class="imgheader">
-    </section>
 
     <!-- Navigation Bar -->
-    <div class="topnav">
-        <a href="index.html">Home</a>
-        <a href="portfolio.html">Boards</a>
-        <a href="contact.html">Contact</a>
-        <a class="active" href="about.html">About Me</a>
-        <a href="sip.html">Home Brew</a>
-        <a href="gradient.html">Fun Surprise</a>
-    </div>
-    <center>
-        <div>
+    <nav class="nav">
+        <div class="nav-container">
+            <img src="./img/codelogonobg.png" alt="Xenia DeNoyer Logo" style="width: 30%;">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link active" href="about.html">About Me</a>
+            <a class="nav-link" href="sip.html">Home Brew</a>
+            <a class="nav-link" href="gradient.html">Fun Surprise</a>
+        </div>
+    </nav>
+
+    <!-- About Hero -->
+    <section class="about-hero">
+        <div class="container">
             <h1>Get to Know Me</h1>
         </div>
-        <table>
-            <tr>
-                <td><img src="./img/xeniaimg2.jpg" width="450"> </td>
-                <td id="aboutMe" class="sectionTable" width="450"><script>displayAboutMe()</script>
-                </td>
-            </tr>
-        </table>
-        <hr class="solid">
-        <br>
-        <!-- Slideshow -->
-        <div>
-            <!-- Slideshow - Default Image -->
-            <img src="./img/oliver2.png" id="puppy" width="350" alt="Slideshow">
+    </section>
 
-            <!-- Slideshow - Navigations -->
-            <h3><a href="#" id="prevLink">&lt; &lt; Previous</a>
-                <a href="#" id="nextLink">Next &gt; &gt;</a>
-            </h3>
+    <!-- About Content -->
+    <section class="section" style="padding: 0;">
+        <div class="container">
+            <div class="about-content">
+                <div>
+                    <img src="./img/xeniatwo.jpg" alt="Xenia DeNoyer" class="about-image">
+                </div>
+                <div class="contact-form-container sip-glass-container" id="aboutMe">
+                    I grew up in a small town called Lone Jack, Missouri. After graduating from Lone Jack High School, I attended the University of Advancing Technology in Tempe, Arizona for a Bachelor of Science in Advancing Computer Science.
+                    <br><br>
+                    During my time at UAT, I was able to gain experience with a variety of programming languages and technologies, including HTML, CSS, JavaScript, C++, C#, and React Native. I also have experience with game engines such as Unreal Engine 4, Unity, and Construct.
+                    <br><br>
+                    After graduating with my degree, I ended up staying in Phoenix, hoping to find new opportunities in all directions. I am currently looking for a new role that would help me grow as a developer while utilizing the skills I acquired in college.
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div>
-            <h3>I am very fond of my three puppies, but I also really love my friends and family more than anything.</h3>
+        <!-- Divider -->
+        <div class="divider"></div>
+
+    <!-- Hobbies Section -->
+    <section class="section" style="padding: 0;">
+        <div class="container">
+            <div class="about-content">
+                <div class="contact-form-container sip-glass-container" id="aboutMe">
+                    During my free time, I tend to play video games such as Clair Obscur: Expedition 33 or The Elder Scrolls V: Skyrim. I enjoy a good movie or show as well, some of my favorites movies being the Lord of the Rings trilogy or recently the new Marvel movie, Thunderbolts. I tend to watch a lot of anime as well, my current favorite being Jujutsu Kaisen. 
+                    <br><br>
+                    Some of my other hobbies include hiking around Arizona and baking. I also enjoy Dungeons and Dragons, especially creating my own worldbuilding and campaigns. 
+                    <br><br>
+                    While I am doing any of these activities, I am likely jamming out to some tunes. I enjoy a variety of rock, alternative, and metal music, but I've been known to dabble in the occasional <br> j-pop every now and then.
+                </div>
+                <div>
+                    <img src="./img/baguette.jpg" alt="Xenia DeNoyer" class="about-image">
+                </div>
+            </div>
         </div>
+    </section>
 
-    </center>
+    <!-- Divider -->
+    <div class="divider"></div>
+
+    <!-- Slideshow Section -->
+    <section class="slideshow-section">
+        <div class="container">
+            <h2>Slideshow</h2>
+            <div class="slideshow-container">
+                <img src="./img/oliver2.png" id="puppy" alt="Slideshow" class="slideshow-image">
+                
+                <div class="slideshow-nav">
+                    <a href="#" id="prevLink">&lt; &lt; Previous</a>
+                    <a href="#" id="nextLink">Next &gt; &gt;</a>
+                </div>
+            </div>
+            
+            <div class="container" style="max-width: 800px; margin-top: 2rem;">
+                <h3>Here are some my favorite photos that I have taken, featuring my parents with our puppies. Can also find some photos from some of my hikes and nature walks with my boyfriend, Chris.</h3>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer>
-        <section class="sectionfooter">
-            <p style="color:white">Xenia DeNoyer's Portfolio Site</p>
-            <p style="color:white">Updated 4/16/2023</p>
-            <p style="color:white">See a bug? Lemme know: xendenoy@uat.edu</p>
-        </section>
+    <footer class="footer">
+        <div class="container">
+            <p>Xenia DeNoyer's Portfolio Site</p>
+            <p>Updated 1/7/2026</p>
+            <p>See a bug? Lemme know: <a href="mailto:xeniadenoyer@gmail.com">xeniadenoyer@gmail.com</a></p>
+        </div>
     </footer>
 </body>
-
 </html>
