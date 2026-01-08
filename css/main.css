@@ -112,6 +112,25 @@ a:hover {
     justify-content: center;
     flex-wrap: wrap;
     gap: 0;
+    position: relative;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--text-light);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: calc(var(--spacing-unit) * 1.25) calc(var(--spacing-unit) * 1.5);
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1001;
+}
+
+.menu-toggle:hover {
+    color: var(--accent-color);
 }
 
 .nav-link {
@@ -492,35 +511,31 @@ a:hover {
 .contact-link-item h3 {
     margin: 0;
     font-size: 1.1rem;
-    color: rgba(255, 255, 255, 0.95);
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    color: var(--text-primary);
+    text-shadow: none;
 }
 
 .contact-link-item a {
-    color: #134074;
+    color: var(--primary-color);
     font-weight: 600;
     font-size: 1.1rem;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
 }
 
 .contact-link-item a:hover {
-    color: #8DA9C4;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    color: var(--accent-color);
 }
 
 .contact-links .form-submit {
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    color: rgba(255, 255, 255, 0.95);
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--text-light);
 }
 
 .contact-links .form-submit:hover {
-    background: rgba(255, 255, 255, 0.3);
-    border-color: rgba(255, 255, 255, 0.5);
-    color: rgba(255, 255, 255, 1);
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+    color: var(--text-primary);
     transform: translateY(-2px);
     box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.5);
 }
@@ -675,8 +690,20 @@ a:hover {
         --spacing-unit: 0.875rem;
     }
 
+    .menu-toggle {
+        display: block;
+    }
+
     .nav-container {
         flex-direction: column;
+    }
+
+    .nav-container:not(.mobile-open) .nav-link {
+        display: none;
+    }
+
+    .nav-container.mobile-open .nav-link {
+        display: block;
     }
 
     .nav-link {
